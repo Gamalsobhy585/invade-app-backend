@@ -15,7 +15,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Complete project report',
                 'description' => 'Finish the quarterly project report and submit to manager',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(3),
+                'due_date' => Carbon::now()->addDays(3)->toString(),
                 'category_id' => 2, 
             ],
             [
@@ -23,7 +23,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Buy groceries',
                 'description' => 'Milk, eggs, bread, fruits and vegetables',
                 'status' => 'completed',
-                'due_date' => Carbon::now()->addDays(1),
+                'due_date' => Carbon::now()->addDays(1)->toString(),
                 'category_id' => 1, 
             ],
             [
@@ -31,7 +31,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Gym workout',
                 'description' => 'Cardio and weight training session',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(2),
+                'due_date' => Carbon::now()->addDays(2)->toString(),
                 'category_id' => 9, 
             ],
             [
@@ -39,7 +39,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Call mom',
                 'description' => 'Check on mom and discuss family gathering',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(1),
+                'due_date' => Carbon::now()->addDays(1)->toString(),
                 'category_id' => 5, 
             ],
             [
@@ -47,7 +47,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Team meeting',
                 'description' => 'Weekly team sync about project progress',
                 'status' => 'in_progress',
-                'due_date' => Carbon::now()->addHours(5),
+                'due_date' => Carbon::now()->addHours(5)->toString(),
                 'category_id' => 2, 
             ],
             [
@@ -55,7 +55,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Movie night',
                 'description' => 'Watch the new released movie with friends',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(5),
+                'due_date' => Carbon::now()->addDays(5)->toString(),
                 'category_id' => 10, 
             ],
             [
@@ -63,7 +63,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Study for exam',
                 'description' => 'Prepare for the upcoming mathematics exam',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(7),
+                'due_date' => Carbon::now()->addDays(7)->toString(),
                 'category_id' => 6, 
             ],
             [
@@ -71,7 +71,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Business proposal',
                 'description' => 'Draft the business proposal for new client',
                 'status' => 'in_progress',
-                'due_date' => Carbon::now()->addDays(4),
+                'due_date' => Carbon::now()->addDays(4)->toString(),
                 'category_id' => 8, 
             ],
             [
@@ -79,7 +79,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Dentist appointment',
                 'description' => 'Regular dental checkup',
                 'status' => 'completed',
-                'due_date' => Carbon::now()->subDays(1),
+                'due_date' => Carbon::now()->subDays(1)->toString(),
                 'category_id' => 3, 
             ],
             [
@@ -87,7 +87,7 @@ class TaskSeeder extends Seeder
                 'title' => 'Friend\'s birthday',
                 'description' => 'Buy gift and attend birthday party',
                 'status' => 'pending',
-                'due_date' => Carbon::now()->addDays(10),
+                'due_date' => Carbon::now()->addDays(10)->toString(),
                 'category_id' => 4, 
             ],
         ];

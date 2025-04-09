@@ -10,8 +10,8 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('ar_name')->unique();
-            $table->string('en_name')->unique();
+            $table->string('ar_name')->unique()->index();
+            $table->string('en_name')->unique()->index();
             $table->timestamps();
         });
     }

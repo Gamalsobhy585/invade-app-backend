@@ -22,9 +22,10 @@ class CategorySeeder extends Seeder
             ['en_name' => 'Relatives','ar_name'=> 'أقارب', ],
             ['en_name' => 'School','ar_name'=> 'مدرسة', ],
             ['en_name' => 'University','ar_name'=> 'جامعة', ],
-            ['en_name' => 'Business','ar_name'=> 'عمل', ],
+            ['en_name' => 'Business','ar_name'=> 'بيزنس', ],
             ['en_name' => 'Sport','ar_name'=> 'رياضة', ],
             ['en_name' => 'Fun & Enjoyment','ar_name'=> 'متعة و تسلية', ],
+            ['en_name' => 'other','ar_name'=> 'أخرى', ],
            
         ];
 

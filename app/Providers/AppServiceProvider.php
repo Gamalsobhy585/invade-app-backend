@@ -3,23 +3,23 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use app\Repositories\Interface\ITask;
-use app\Repositories\Implementation\TaskRepository;
-use app\Repositories\Interface\ICategory;
-use app\Repositories\Implementation\CategoryRepository;
-use app\Repositories\Implementation\UserRepository;
+use App\Repositories\Interface\ITask;
+use App\Repositories\Implementation\TaskRepository;
+use App\Repositories\Interface\ICategory;
+use App\Repositories\Implementation\CategoryRepository;
+use App\Repositories\Implementation\UserRepository;
 use App\Repositories\Interface\IUser;
-use app\Services\Interface\IAuthService;
-use app\Services\Interface\ITaskService;
-use app\Services\Interface\ICategoryService;
-use app\Services\AuthService;
-use app\Services\TaskService;
-use app\Services\CategoryService;
+use App\Services\Interface\IAuthService;
+use App\Services\Interface\ITaskService;
+use App\Services\Interface\ICategoryService;
+use App\Services\AuthService;
+use App\Services\TaskService;
+use App\Services\CategoryService;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register any Application services.
      */
     public function register(): void
     {
@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap any Application services.
      */
     public function boot()
     {

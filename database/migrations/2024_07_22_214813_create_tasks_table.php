@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->index();
             $table->text('description')->index()->nullable();
-            $table->string('status')->default('pending');
+            $table->enum('status', [1, 2])->default('1')->comment('1 = pending, 2 = completed')->nullable();
             $table->date('due_date')->nullable();
             $table->foreignId('category_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade')->onUpdate('cascade');

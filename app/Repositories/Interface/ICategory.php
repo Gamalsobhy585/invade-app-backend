@@ -1,9 +1,8 @@
 <?php
 
-namespace app\Repositories\Interface;
+namespace App\Repositories\Interface;
 
 interface ICategory
 {
     public function get();
-    public function save($model);
 }

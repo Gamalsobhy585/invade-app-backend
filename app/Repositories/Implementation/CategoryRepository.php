@@ -1,9 +1,9 @@
 <?php
 
-namespace app\Repositories\Implementation;
+namespace App\Repositories\Implementation;
 
-use app\Models\Category;
-use app\Repositories\Interface\ICategory;
+use App\Models\Category;
+use App\Repositories\Interface\ICategory;
 
 class CategoryRepository implements ICategory
 {
@@ -13,9 +13,6 @@ class CategoryRepository implements ICategory
 
     }
 
-    public function save($model)
-    {
-    return  Category::create($model);
-    }
+   
 
 }

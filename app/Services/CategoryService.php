@@ -1,11 +1,12 @@
 <?php
 
-namespace app\Services;
+namespace App\Services;
 
-use app\Repositories\Interface\ICategory;
-use app\Traits\ResponseTrait;
+use App\Repositories\Interface\ICategory;
 use Illuminate\Support\Facades\Log;
-use app\Http\Resources\CategoryResource;
+use App\Http\Resources\CategoryResource;
+use Illuminate\Support\Facades\Cache;
+
 use App\Services\Interface\ICategoryService;
 
 class CategoryService implements ICategoryService
@@ -19,13 +20,21 @@ class CategoryService implements ICategoryService
 
     public function getCategories($request)
     {
-        
+        try {
+            $cacheKey = 'categories:all';
+            
+            return Cache::remember($cacheKey, now()->addHours(1), function() {
+                $categories = $this->Categoryrepo->get();
+                return CategoryResource::collection($categories);
+            });
+            
+        } catch (\Exception $e) {
+            Log::error('Failed to get categories: ' . $e->getMessage());
+            throw new \Exception(__('messages.category.fetch_failed'), 500);
+        }
     }
 
-    public function store($request)
-    {
-
-    }
+ 
 
 
 }

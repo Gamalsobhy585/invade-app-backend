@@ -11,6 +11,12 @@ class Category extends Model
 
     protected $fillable = ['ar_name', 'en_name'];
 
+    protected $appends = ['name'];
+
+    public function getNameAttribute()
+    {
+        return app()->getLocale() === 'ar' ? $this->ar_name : $this->en_name;
+    }
 
     public function tasks()
     {

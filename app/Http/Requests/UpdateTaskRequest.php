@@ -19,7 +19,7 @@ class UpdateTaskRequest extends FormRequest
         return [
             'title' => 'sometimes|string|max:255',
             'description' => 'sometimes|string',
-            'status' => 'sometimes|in:pending,completed',
+            'status' => 'sometimes|in:1,2',
             'due_date' => 'sometimes|date',
             'category_id' => 'sometimes|exists:categories,id',
         

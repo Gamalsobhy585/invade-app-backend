@@ -9,8 +9,8 @@ class CategoryResource extends JsonResource
  public function toArray(Request $request): array
 {
    return [
-        'category id' => $this->id,
-        'category' => $this->name,
+        'id' => $this->id,
+        'name' => $this->name,
   
     ];
 }

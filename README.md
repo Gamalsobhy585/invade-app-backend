@@ -34,7 +34,7 @@ php artisan migrate --seed
 The seeded user comes with **10 pre-populated tasks** to make testing easier. Alternatively, you can register a new user through the provided API endpoints.
 
 ## API Documentation
-Complete API documentation is available via **Postman**: Invade Solutions API
+Complete API documentation is available via **Postman**: [Invade Solutions API](https://www.postman.com/martian-shadow-736975/invade-solutions/overview)
 
 For each endpoint, you'll find detailed responses showing URLs, different use cases, and request bodies when needed.
 
